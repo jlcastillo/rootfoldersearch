@@ -9,7 +9,7 @@ I used it to overcome a limitation in Jupyter Notebooks, that doesn't provide th
 ```
 import rootfoldersearch
 
-# returns a string with the absolute path to the root folder, where Readme.md is located
+# returns a string with the absolute path to the root folder, where Readme.md is located, starting the search in the CWD.
 rootfoldersearch.findpath('Readme.md')
 
 # the same, but using a file in a subfolder as reference to find the root directory
@@ -17,4 +17,8 @@ rootfoldersearch.findpath('/util/a-file')
 
 # the same, but only tries 3 parent folders recursively (default is 10)
 rootfoldersearch.findpath('Readme.md', depth=3)
+
+# starting the search in a specific directory (as opposed to using the CWD)
+rootfoldersearch.findpath('Readme.md', cwd='/..')
+
 ```
