@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="rootfoldersearch", # Replace with your own username
-    version="0.0.1",
+    version="0.0.2",
     author="jlcastillo",
     author_email="",
     description="This package finds the root directory of a project by traversing the ancestors directories starting at a given path.",
